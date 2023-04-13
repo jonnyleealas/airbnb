@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
     
             <nav className='nav'>
-                <img src={AirBnbLogo} alt={'airbnb logo'} />
+                <img className={'airbnb-logo'} src={AirBnbLogo} alt={'airbnb logo'} />
             </nav>
         
     )
