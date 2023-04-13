@@ -1,7 +1,10 @@
+import NavBar from '../src/NavBar/NavBar.js'
+
+
 const App = () => {
   return (
-    <div>
-      App
+    <div className='App'>
+      <NavBar />
     </div>
   )
 }
