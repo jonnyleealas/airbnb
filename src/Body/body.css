@@ -1,0 +1,27 @@
+section {
+    padding-top: 2rem;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;  
+    
+ }
+
+
+.people-pic {
+   
+    width: 400px;
+    align-self: center;
+}
+
+.story {
+    padding-left: 2rem;
+}
+
+.interactive-activities {
+    width: 320px;
+    height: 566px;
+}
+
