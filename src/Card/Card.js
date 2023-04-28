@@ -5,6 +5,7 @@ import Star from '../public/star.png'
 import './card.css'
 
 const Card = () => {
+    
     return(
         <div className='card'>
             <img className='card-image' src={Katy} alt="katy" />

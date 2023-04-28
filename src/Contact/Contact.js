@@ -1,14 +1,16 @@
 import catImage from '../public/catImage.jpeg'
 
 
-const Contact = () => {
+const Contact = (props) => {
+    console.log('banana', props)
     return (
         <div>
-            <img src={catImage} alt='catImage' />
-            <h3>Mr. Whiskerson</h3>
+            <img src={props.img} alt='catImage' />
+            <h3>{props.name}</h3>
             <div className='info-group'>
-                <p>phone icon</p>
-                <p>(212 555-1234</p>
+                <p>{props.email}</p>
+                <p>{props.phone}</p>
+                <p>{props.mood}</p>
             </div>
         </div>
     )
