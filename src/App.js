@@ -13,7 +13,7 @@ const App = () => {
       <NavBar />
       <Contact img={kitty1} name='kitty1' phone='512 777-7771' email='kitty1@blah.org' mood='happy'  />
       <Contact img={image2} name='kitty2' phone='512 777-7772' email='kitty2@blah.com' mood='very happy'  />
-      <Contact img={image3} name='kitty3' phone='512 777-7773' email='kitty3@blah.net' mood='angry' />
+      <Contact img={image3} name='kitty3' phone='512 777-7773' email='kitty3@blah.net' mood='angry' strength='10x' />
       <Body />
     </div>
   )

@@ -2,7 +2,6 @@ import catImage from '../public/catImage.jpeg'
 
 
 const Contact = (props) => {
-    console.log('banana', props)
     return (
         <div>
             <img src={props.img} alt='catImage' />
@@ -11,6 +10,7 @@ const Contact = (props) => {
                 <p>{props.email}</p>
                 <p>{props.phone}</p>
                 <p>{props.mood}</p>
+                <p>{props.strength}</p>
             </div>
         </div>
     )
