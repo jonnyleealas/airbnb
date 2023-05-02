@@ -1,4 +1,5 @@
 import PhotoGrid from '../public/Group77.png'
+import Katy from '../public/katy.png'
 import Card from '../Card/Card'
 import './body.css'
 
@@ -17,6 +18,10 @@ const Body = () => {
         timeOfDay = 'night'
     }
 
+    const cardInfo = {
+        katy: Katy,
+    }
+
 
 
 
@@ -30,7 +35,7 @@ const Body = () => {
                 <p className='interactive-activities'>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.</p>
             </div>
         <div>
-            <Card />
+            <Card picture={cardInfo.katy} />
         </div>
         </section>
     )
