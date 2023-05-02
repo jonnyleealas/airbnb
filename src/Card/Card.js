@@ -11,11 +11,11 @@ const Card = (props) => {
             <img className='card-image' src={props.picture} alt='person' />
             <div className='card-stats'>
                 <img className='star' src={Star} alt="star" />
-                <span className='gray'>5.0</span>
-                <span className='gray'>(6) • USA</span>
+                <span className='gray'>{props.starRating}</span>
+                <span className='gray'>({props.playerNumber}) • USA</span>
             </div>
-                <p>Life Lessons with Katie Zaferes</p>
-                <p><span className='bold'>From $136</span> / Person</p>
+                <p>{props.lifeLessons}</p>
+                <p><span className='bold'>From ${props.cost}</span> / Person</p>
         </div>
     )
 }

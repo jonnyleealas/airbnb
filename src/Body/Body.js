@@ -20,6 +20,10 @@ const Body = () => {
 
     const cardInfo = {
         katy: Katy,
+        starRating: [1,2,3,4,5],
+        playerNumber: 6,
+        lifeLessons: 'Life Lessons with Katie Zaferes',
+        cost: [134],
     }
 
 
@@ -35,7 +39,7 @@ const Body = () => {
                 <p className='interactive-activities'>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.</p>
             </div>
         <div>
-            <Card picture={cardInfo.katy} />
+            <Card picture={cardInfo.katy} starRating={cardInfo.starRating[3]} playerNumber={cardInfo.playerNumber} lifeLessons={cardInfo.lifeLessons} cost={cardInfo.cost[0]} />
         </div>
         </section>
     )
