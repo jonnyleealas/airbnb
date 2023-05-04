@@ -1,7 +1,7 @@
-import PhotoGrid from '../public/Group77.png'
-import Katy from '../public/katy.png'
+// import PhotoGrid from '../public/Group77.png'
+// import Katy from '../public/katy.png'
 import Card from '../Card/Card'
-import CardApi from '../Card/CardData'
+import CardData from '../Card/CardData'
 import './body.css'
 
 
@@ -19,37 +19,32 @@ const Body = () => {
         timeOfDay = 'night'
     }
 
-    const CardData =  CardApi.map((CardData) => {
+    const CardApi =  CardData.map((data) => {
         return <Card 
-        picture={CardData.picture}
-        playerNumber={CardData.playerNumber}
-        lifeLessons={CardData.lifeLessons}
-        starRating={CardData.starRating} 
-        cost={CardData.cost}
-        star={CardData.star}
+        // picture={data.picture}
+        // playerNumber={CardData.playerNumber}
+        // lifeLessons={CardData.lifeLessons}
+        // starRating={CardData.starRating} 
+        // cost={CardData.cost}
+        star={data.star}
         />
     })
 
-    // picture:'picture',
-    //     starRating: '5',
-    //     playerNumber: '6',
-    //     lifeLessons: 'Work Hard',
-    //     cost: '$100',
-    //     star: 'star',
+  
 
 
 
     return (
         <section className="hero">
             
-                <img className={'people-pic'}src={PhotoGrid} alt={'people'} />
+                {/* <img className={'people-pic'}src={PhotoGrid} alt={'people'} /> */}
         
             <div className='story'>
                 <h1>{timeOfDay}</h1>
                 <p className='interactive-activities'>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.</p>
             </div>
         <div>
-            {CardData}
+            {CardApi}
         </div>
         </section>
     )

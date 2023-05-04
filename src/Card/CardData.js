@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-anonymous-default-export
-import Star from '../public/star.png'
+import Star from './public/star.png'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
@@ -8,7 +8,7 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$100',
-        star: {Star},
+        star: Star,
     }
 ]
 

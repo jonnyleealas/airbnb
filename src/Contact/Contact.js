@@ -1,4 +1,4 @@
-import catImage from '../public/catImage.jpeg'
+// import catImage from '../public/catImage.jpeg'
 
 
 const Contact = (props) => {
