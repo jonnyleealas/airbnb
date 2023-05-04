@@ -10,7 +10,7 @@ const Card = (props) => {
         <div className='card'>
             <img className='card-image' src={props.picture} alt='person' />
             <div className='card-stats'>
-                <img className='star' src={Star} alt="star" />
+                <img className='star' src={props.star} alt="star" />
                 <span className='gray'>{props.starRating}</span>
                 <span className='gray'>({props.playerNumber}) • USA</span>
             </div>

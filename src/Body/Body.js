@@ -1,6 +1,7 @@
 import PhotoGrid from '../public/Group77.png'
 import Katy from '../public/katy.png'
 import Card from '../Card/Card'
+import CardApi from '../Card/CardData'
 import './body.css'
 
 
@@ -18,14 +19,23 @@ const Body = () => {
         timeOfDay = 'night'
     }
 
-    const cardInfo = {
-        katy: Katy,
-        starRating: [1,2,3,4,5],
-        playerNumber: 6,
-        lifeLessons: 'Life Lessons with Katie Zaferes',
-        cost: [134],
-    }
+    const CardData =  CardApi.map((CardData) => {
+        return <Card 
+        picture={CardData.picture}
+        playerNumber={CardData.playerNumber}
+        lifeLessons={CardData.lifeLessons}
+        starRating={CardData.starRating} 
+        cost={CardData.cost}
+        star={CardData.star}
+        />
+    })
 
+    // picture:'picture',
+    //     starRating: '5',
+    //     playerNumber: '6',
+    //     lifeLessons: 'Work Hard',
+    //     cost: '$100',
+    //     star: 'star',
 
 
 
@@ -39,7 +49,7 @@ const Body = () => {
                 <p className='interactive-activities'>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.</p>
             </div>
         <div>
-            <Card picture={cardInfo.katy} starRating={cardInfo.starRating[3]} playerNumber={cardInfo.playerNumber} lifeLessons={cardInfo.lifeLessons} cost={cardInfo.cost[0]} />
+            {CardData}
         </div>
         </section>
     )
