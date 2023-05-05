@@ -1,5 +1,5 @@
-// import PhotoGrid from '../public/Group77.png'
-// import Katy from '../public/katy.png'
+import PhotoGrid from '../public/Group77.png'
+import Katy from '../public/katy.png'
 import Card from '../Card/Card'
 import CardData from '../Card/CardData'
 import './body.css'
@@ -21,11 +21,12 @@ const Body = () => {
 
     const CardApi =  CardData.map((data) => {
         return <Card 
-        // picture={data.picture}
-        // playerNumber={CardData.playerNumber}
-        // lifeLessons={CardData.lifeLessons}
-        // starRating={CardData.starRating} 
-        // cost={CardData.cost}
+        key={data}
+        picture={data.picture}
+        playerNumber={data.playerNumber}
+        lifeLessons={data.lifeLessons}
+        starRating={data.starRating} 
+        cost={data.cost}
         star={data.star}
         />
     })
@@ -37,7 +38,7 @@ const Body = () => {
     return (
         <section className="hero">
             
-                {/* <img className={'people-pic'}src={PhotoGrid} alt={'people'} /> */}
+                <img className={'people-pic'}src={PhotoGrid} alt={'people'} />
         
             <div className='story'>
                 <h1>{timeOfDay}</h1>

@@ -2,7 +2,7 @@
 // import Jill from '../public/jill.png'
 // import Bike from '../public/bike.png'
 // import Star from '../public/star.png'
-import CardData from './CardData'
+// import CardData from './CardData'
 import './card.css'
 
 const Card = (props) => {
