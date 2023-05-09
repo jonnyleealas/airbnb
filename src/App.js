@@ -2,14 +2,32 @@ import NavBar from '../src/NavBar/NavBar.js'
 import Footer from '../src/Footer/Footer.js'
 import Body from '../src/Body/Body.js'
 import Contact from '../src/Contact/Contact.js'
+import Card from '../src/Card/Card.js'
+import CardData from './Card/CardData.js'
 
 import './App.css'
 
 const App = () => {
+
+  const Cards = CardData.map((data) => {
+    return <Card
+      key={data}
+      picture={data.picture}
+      playerNumber={data.playerNumber}
+      lifeLessons={data.lifeLessons}
+      starRating={data.starRating}
+      cost={data.cost}
+      star={data.star}
+    />
+  })
   return (
     <div className='App'>
       <NavBar />
-      <Body />
+
+      <section className='cards-list'>
+        {Cards}
+      </section>
+
     </div>
   )
 }

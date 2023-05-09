@@ -2,6 +2,10 @@ section {
     padding-top: 2rem;
 }
 
+.card--title {
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
 .hero {
     display: flex;
