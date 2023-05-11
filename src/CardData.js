@@ -15,18 +15,18 @@ export default [
         lifeLessons: 'Work Hard',
         cost: '$100',
         star: Star,
-        openSpots: 5,
+        openSpots: 0,
     },
     {
 
-        id: 2,
+        id: 0,
         picture: Cat,
         starRating: '5',
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$50',
         star: Star,
-        openSpots: 5,
+        openSpots: 0,
     },
     {
 

@@ -18,6 +18,7 @@ const App = () => {
       starRating={data.starRating}
       cost={data.cost}
       star={data.star}
+      openSpots={data.openSpots}
     />
   })
 
