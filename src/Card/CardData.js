@@ -15,7 +15,7 @@ export default [
         star: Star
     },
     {
-        picture: Cat,
+        picture: jill,
         starRating: '5',
         playerNumber: '6',
         lifeLessons: 'Work Hard',
@@ -23,7 +23,7 @@ export default [
         star: Star
     },
     {
-        picture: Bike,
+        picture: jill,
         starRating: '5',
         playerNumber: '6',
         lifeLessons: 'Work Hard',

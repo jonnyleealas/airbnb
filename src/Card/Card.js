@@ -1,9 +1,4 @@
 
-// import Jill from '../public/jill.png'
-// import Bike from '../public/bike.png'
-// import Star from '../public/star.png'
-
-
 const Card = (props) => {
 
 
@@ -17,8 +12,8 @@ const Card = (props) => {
                 <span className='gray'>({props.playerNumber}) • USA</span>
             </div>
             <div>
-                <p>{props.lifeLessons}</p>
-                <p><span className='bold'>From ${props.cost}</span> / Person</p>
+                <p className="card--title">{props.lifeLessons}</p>
+                <p className="card--price"><span className='bold'>From ${props.cost}</span> / Person</p>
             </div>
 
         </div>
