@@ -26,7 +26,8 @@ export default [
         lifeLessons: 'Work Hard',
         cost: '$50',
         star: Star,
-        openSpots: 0,
+        openSpots: 5,
+        location: 'Online',
     },
     {
 
@@ -36,7 +37,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 0,
     },
     {
         id: 4,

@@ -19,6 +19,7 @@ const App = () => {
       cost={data.cost}
       star={data.star}
       openSpots={data.openSpots}
+      location={data.location}
     />
   })
 
