@@ -14,7 +14,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$100',
-        star: Star
+        star: Star,
+        openSpots: 5,
     },
     {
 
@@ -24,7 +25,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$50',
-        star: Star
+        star: Star,
+        openSpots: 5,
     },
     {
 
@@ -43,7 +45,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 5
     },
     {
         id: 5,
@@ -52,7 +55,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 5,
     },
     {
         picture: jill,
@@ -69,7 +73,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 5
     },
     {
         picture: jill,
@@ -77,7 +82,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 5
     },
     {
         id: 7,
@@ -86,7 +92,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
+        star: Star,
+        openSpots: 5
     },
     {
         id: 8,
@@ -95,8 +102,8 @@ export default [
         playerNumber: '6',
         lifeLessons: 'Work Hard',
         cost: '$43',
-        star: Star
-    },
-   
+        star: Star,
+        openSpots: 5
+    }
 ]
 
