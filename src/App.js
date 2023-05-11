@@ -3,7 +3,7 @@ import Footer from '../src/Footer/Footer.js'
 import Body from '../src/Body/Body.js'
 import Contact from '../src/Contact/Contact.js'
 import Card from '../src/Card/Card.js'
-import CardData from './Card/CardData.js'
+import CardData from './CardData.js'
 
 import './App.css'
 
@@ -11,7 +11,7 @@ const App = () => {
 
   const Cards = CardData.map((data) => {
     return <Card
-      key={data}
+      key={data.id}
       picture={data.picture}
       playerNumber={data.playerNumber}
       lifeLessons={data.lifeLessons}
@@ -20,6 +20,7 @@ const App = () => {
       star={data.star}
     />
   })
+
   return (
     <div className='App'>
       <NavBar />
