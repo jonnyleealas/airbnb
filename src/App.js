@@ -12,14 +12,7 @@ const App = () => {
   const Cards = CardData.map((data) => {
     return <Card
       key={data.id}
-      picture={data.picture}
-      playerNumber={data.playerNumber}
-      lifeLessons={data.lifeLessons}
-      starRating={data.starRating}
-      cost={data.cost}
-      star={data.star}
-      openSpots={data.openSpots}
-      location={data.location}
+      item={data}
     />
   })
 
