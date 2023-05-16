@@ -10,9 +10,10 @@ import './App.css'
 const App = () => {
 
   const Cards = CardData.map((data) => {
+    
     return <Card
       key={data.id}
-      item={data}
+      item={data }
     />
   })
 
